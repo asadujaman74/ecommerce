@@ -1,0 +1,40 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    body{
+        background-color: rgb(143, 140, 140);
+    }
+</style>
+<br>
+
+<body>
+
+<div class="container bg-white shadow-lg rounded-4 p-5 text-center form-layout" style="max-width:500px;">
+    
+    <div class="text-center mb-3">
+        <i class="fa fa-envelope text-primary fa-3x"></i>
+    </div>
+
+    <h5 class="fw-bold text-dark">A Verification Link Was Sent to Your Email</h5>
+    <hr>
+
+    <p class="text-secondary mt-3" style="font-size:16px;">
+        📬 Please check your <strong>email inbox</strong> and click the verification link to continue.
+    </p>
+
+    <p class="text-muted mt-4" style="font-size:14px;">
+        Didn’t receive the email? <br>
+        📨 Check your spam folder or 
+        <a href="{% url 'register' %}" class="text-info text-decoration-none">request a new one</a>.
+    </p>
+</div>
+
+
+    
+</body>
+
+{% endblock %}

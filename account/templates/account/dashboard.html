@@ -1,0 +1,54 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    body{
+        background-color: rgb(143, 140, 140);
+    }
+</style>
+
+<body>
+    <br>
+    <div class=" container d-flex" >
+<div class="container me-2 bg-white shadow-md p-5 form-layout">
+    
+    <h4 class="text-center my-4 fw-bold text-primary"> Welcome! {{user}} </h4> <hr>
+
+    <p>this is your dashboard you can performing anything with the following:</p>
+    <li> Track your account </li>
+    <li> Manage your account</li>
+    
+</div>
+<br>
+
+<div class="container me-2 bg-white shadow-md p-5 form-layout">
+    <h4 class="text-center my-4 fw-bold text-primary"> Track yours orders!</h4> <hr>
+    <p>Track all of yours order here</p>
+    <a href="{% url 'user-logout' %}" class="btn btn-primary my-2">My orders </a>
+
+</div>
+
+<br>
+<div class="container bg-white shadow-md p-5 form-layout">
+    <h4 class="text-center my-4 fw-bold text-primary"> Manage your account!</h4> <hr>
+    <p>Update or Delete your account</p>
+    <a href="{% url 'profile-management' %}" class="btn btn-primary my-2">Profile Management </a>
+    
+</div>
+<br>
+
+<div class="container bg-white shadow-md p-5 form-layout">
+    <h4 class="text-center my-4 fw-bold text-primary"> Manage Shipping</h4> <hr>
+    <p> Added your shipping address.</p>
+    <a href="{% url 'manage-shipping' %}" class="btn btn-primary my-2">Manage Shipping </a>
+    
+</div>
+
+</div>
+
+</body>
+
+{% endblock %}
