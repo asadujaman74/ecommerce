@@ -1,6 +1,6 @@
 # 🛒 Django Ecommerce Project
 
-A full-featured ecommerce web application built with **Django**, deployed on **Vercel**.
+A full-featured ecommerce web application built with **Django** <!-- deployed on **Vercel**.-->
 
 <!-- 🔗 **Live Demo:** [ecommerce1-nu-black.vercel.app](https://ecommerce1-nu-black.vercel.app)-->
 
